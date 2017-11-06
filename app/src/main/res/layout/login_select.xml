@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    android:padding="20dp">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="일반 회원으로 로그인"
+        android:id="@+id/memberCheck"
+        android:background="@drawable/button"
+        android:onClick="onClickBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="10dp"
+
+
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="가게 관리자로 로그인"
+        android:id="@+id/storeCheck"
+        android:background="@drawable/button"
+        android:onClick="onClickBtn"
+        android:layout_below="@id/memberCheck"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

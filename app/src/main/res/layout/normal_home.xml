@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/registerStore"
+        android:background="@drawable/ic_add_box_black_24dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="가게 추가"
+        android:id="@+id/addText"
+        android:layout_toLeftOf="@id/registerStore"
+        android:layout_margin="1dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/couponList"
+        android:layout_below="@id/registerStore"
+        android:divider="#00000000" >
+
+    </ListView>
+
+
+
+
+</RelativeLayout>

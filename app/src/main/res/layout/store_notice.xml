@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="공지사항"
+        android:textSize="25dp"
+        android:id="@+id/noticeTxt"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textSize="25dp"
+        android:id="@+id/addNoticeBtn"
+        android:background="@drawable/ic_add_box_black_24dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+   />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listVIew"
+        android:layout_below="@id/noticeTxt"
+        android:padding="10dp"
+        >
+
+    </ListView>
+
+
+
+
+
+
+</RelativeLayout>

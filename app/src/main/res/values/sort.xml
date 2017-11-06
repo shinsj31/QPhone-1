@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list">
+        <item>리스트형</item>
+        <item>지도형</item>
+    </string-array>
+    <string-array name="sort">
+        <item>가나다</item>
+        <item>쿠폰갯수</item>
+    </string-array>
+</resources>

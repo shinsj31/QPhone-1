@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "623494705627",
+    "firebase_url": "https://qphone-fd01e.firebaseio.com",
+    "project_id": "qphone-fd01e",
+    "storage_bucket": "qphone-fd01e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623494705627:android:82d8d23dde302950",
+        "android_client_info": {
+          "package_name": "com.example.a502.drawex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623494705627-60pnlq3tv9c0f37nduoge9qi0pckkc46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC636xK7DKdYlvFFN7U7CBmJGeY66JetYc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

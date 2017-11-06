@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_start">
+
+    <ImageView
+        android:id="@+id/img_ex"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/coupon_ex"/>
+
+    <Button
+        android:layout_below="@+id/img_ex"
+        android:background="@drawable/main_frame"
+        android:text="Start"
+        android:id="@+id/btn_start"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:background="@drawable/main_frame"
+        android:id="@+id/btn_others"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:text="다른 Templete(준비중)"/>
+
+</RelativeLayout>

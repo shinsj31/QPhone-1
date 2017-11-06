@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/background_peach"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            android:id="@+id/code_layout"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가게코드"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:layout_weight="0.5"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:layout_weight="1.5"
+                android:text="000"
+                android:id="@+id/storeCode"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_peach"
+            android:padding="10dp"
+            android:id="@+id/info_layout"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/code_layout"
+
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="가게명"
+                android:id="@+id/storeName"
+                android:background="@drawable/background2"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/storePosition"
+                android:hint="가게 위치"
+                android:background="@drawable/background2"
+                android:layout_below="@id/storeName"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/storeCall"
+                android:hint="가게 전화번호"
+                android:background="@null"
+                android:layout_below="@id/storePosition"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_layout"
+            android:layout_below="@id/info_layout"
+            android:background="@drawable/background_peach"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="사진가져오기"
+                android:background="@drawable/background"
+                android:id="@+id/photoBtn"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/photoBtn"
+                android:background="@drawable/background"
+                android:id="@+id/imgView"
+                />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가게등록하기"
+            android:id="@+id/store_register_btn"
+            android:layout_below="@id/photo_layout"
+            android:background="#fc9d9a"
+
+
+            />
+
+    </RelativeLayout>
+</ScrollView>

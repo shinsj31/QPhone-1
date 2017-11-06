@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="40dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    android:background="@drawable/couponlist_item_background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="가게명"
+        android:textSize="20dp"
+        android:id="@+id/store_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/total_coupon"
+        android:text="10"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/slashTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/total_coupon"
+        android:text="/"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/current_coupon"
+        android:text="9"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@id/slashTxt"
+        />
+
+
+
+</RelativeLayout>

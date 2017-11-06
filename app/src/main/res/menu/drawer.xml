@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/noLogin">
+        <item
+            android:id="@+id/navigation_item_login"
+            android:checked="true"
+            android:icon="@drawable/login"
+            android:title="@string/nav_item_login" />
+        <item
+            android:id="@+id/navigation_item_register"
+            android:icon="@drawable/register"
+            android:title="@string/nav_item_register" />
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/after_login_normal"
+        android:visible="false">
+        <item
+            android:id="@+id/navigation_item_home"
+            android:checked="true"
+            android:icon="@drawable/home"
+            android:title="홈" />
+
+        <item
+            android:id="@+id/navigation_item_logout"
+            android:icon="@drawable/logout"
+            android:title="로그아웃" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/after_login_store"
+        android:visible="false">
+        <item
+            android:id="@+id/navigation_item_consumers"
+            android:checked="true"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="회원들" />
+
+        <item
+            android:id="@id/navigation_item_logout"
+            android:icon="@drawable/logout"
+            android:title="로그아웃" />
+
+
+        <item android:title="My store">
+            <menu>
+                <item
+                    android:icon="@drawable/ic_store_black_24dp"
+                    android:id="@+id/navigation_item_mystore"
+                    android:title="내 가게" />
+                <item
+                    android:icon="@drawable/couponcustom"
+                    android:id="@+id/navigation_item_coupon_custom"
+                    android:title="쿠폰만들기" />
+                <item
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    android:id="@+id/navigation_item_notice"
+                    android:title="공지사항" />
+
+
+
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

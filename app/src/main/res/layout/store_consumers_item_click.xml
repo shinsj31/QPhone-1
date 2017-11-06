@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoLayout"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idText"
+            android:text="kdhdud15"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 님의 쿠폰"
+            android:layout_toRightOf="@id/idText"
+            android:textSize="15dp"
+            android:layout_alignBaseline="@id/idText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용가능한 쿠폰 수 : "
+            android:textSize="15dp"
+            android:id="@+id/text"
+            android:layout_below="@id/idText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hasCouponNum"
+            android:layout_toRightOf="@id/text"
+            android:layout_below="@id/idText"
+            android:textSize="15dp"
+            android:text="1"/>
+
+    </RelativeLayout>
+
+
+   <com.example.a502.drawex.CouponView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/couponView"
+       android:layout_below="@id/infoLayout"
+       android:layout_marginTop="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonlayout"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/couponView"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usecouponLayout">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/usecoupon"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/usecoupon"
+                />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="쿠폰사용"
+                android:id="@+id/usecouponText"
+                android:layout_below="@id/usecoupon"
+                android:textSize="15dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stampLayout"
+            android:layout_toRightOf="@id/usecouponLayout"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/stamm_gray"
+                android:id="@+id/stamp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="적립하기"
+                android:layout_below="@id/stamp"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refreshLayout"
+            android:layout_toRightOf="@id/stampLayout">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/returnimg"
+                android:id="@+id/refresh"
+                android:layout_marginBottom="5dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="되돌리기"
+                android:layout_below="@id/refresh"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장하기"
+        android:layout_below="@id/buttonlayout"
+        />
+
+</RelativeLayout>

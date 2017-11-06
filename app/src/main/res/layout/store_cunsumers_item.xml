@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_peach"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kdhdud15"
+        android:id="@+id/consumer_id"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="님"
+        android:id="@+id/textNim"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/consumer_id"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용가능한 쿠폰수 : "
+        android:id="@+id/coupon_num_text"
+        android:layout_below="@id/consumer_id"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_toRightOf="@id/coupon_num_text"
+        android:id="@+id/coupon_num"
+        android:layout_below="@id/textNim"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/stamm_gray"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
